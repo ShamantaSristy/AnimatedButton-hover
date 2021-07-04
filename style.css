@@ -1,0 +1,105 @@
+
+a{
+    text-decoration: none;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 45px;
+    padding: 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    height: 45vh;
+    padding: 2vh;
+    margin: 10px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animation Starts from Bottom Left */
+#bottom-left:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #D83A56;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+#bottom-left:hover:before {
+    transform: rotate(0deg);
+    
+}
+
+/* Animation starts from Bottom Right */
+
+#bottom-right:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #14FFEC;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    transition: transform 1s;
+}
+
+#bottom-right:hover:before {
+    transform: rotate(0deg);
+    
+}
+
+
+/* Animation starts from Top Right */
+
+#top-right:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FFBCBC;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+#top-right:hover:before {
+    transform: rotate(0deg);
+    
+}
+/* Animation starts from Top Left */
+
+#top-left:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #C6B4CE;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    transition: transform 1s;
+}
+
+#top-left:hover:before {
+    transform: rotate(0deg);
+    
+}
